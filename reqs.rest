@@ -1,0 +1,25 @@
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "name": "oooo",
+    "email": "eee@gmail.com",
+    "password": "test123"
+}
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "eee@gmail.com",
+    "password": "test123"
+}
+
+
+###
+
+GET http://localhost:5000/profile
+Content-Type: application/json
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiY2E2YWJmM2ItNDI2OS00YjJiLWIwMGItZGU4MjljZTZhNTAyIiwiaWF0IjoxNzQwMjM0MjUwLCJleHAiOjE3NDAyMzc4NTB9.AdQa_438rELEK_2Rocx_rTTKkZcxSvlLr7QMZ2ehsso
